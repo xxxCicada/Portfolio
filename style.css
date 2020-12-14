@@ -1,0 +1,87 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  height: 100px;
+  background-color: #A066FF;
+}
+.hiBlock{
+  background-color: #fff;
+  height: 1080px;
+  display: flex;
+}
+.leftBlock{
+  height: 1080px;
+  width: 42%;
+  background-color: #6666FF;
+}
+.message{
+  height: 125px;
+  width: 550px;
+  border-radius: 35px;
+  margin-left: 50px;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-top: 170px;
+  position: relative;
+}
+.message:before{
+  z-index: 0;
+  content: ''; 
+  position: absolute; 
+  left: 30px; bottom: -35px; 
+  border: 30px solid transparent; border-left: 30px solid #fff; border-top: 30px solid #fff;
+  transform: rotate(20deg);
+}
+.message img{
+  float:left;
+  margin-right: 40px;
+}
+.message h2{
+  font-size: 77px;
+  color:#6666FF;
+}
+.message:nth-child(2){
+  width: 700px;
+}
+
+
+.rightBlock{
+  padding-top: 155px;
+}
+.rightBlock .message{
+  background-color: #6666FF;
+  
+}
+.rightBlock .message h2{
+  color: #fff;
+  overflow: hidden;
+}
+.rightBlock .message:nth-child(1){
+  width: 920px;
+  margin-left: 130px;
+}
+.rightBlock .message:nth-child(3){
+  width: 1000px;
+}
+.rightBlock .message img{
+  float: right;
+  margin-right: 100px;
+  margin-left: 0;
+}
+.rightBlock .message:after{
+  z-index: 0;
+  content: ''; 
+  position: absolute; 
+  right: 30px; bottom: -35px; 
+  border: 30px solid transparent; border-top: 30px solid #6666FF; border-right: 30px solid #6666FF;
+  transform: rotate(-20deg);
+}
+.rightBlock .message:before{
+  border:none;
+}
